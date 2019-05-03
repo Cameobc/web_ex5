@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/layout.css">
+<style type="text/css">
+.joinmain{
+	width: 800px;
+	height: 1000px;
+	margin: 0 auto;
+	margin-top:100px;
+}
+.joinimage{
+	width: 100%;
+	height: 100px;
+}
+.joinimage li{
+	list-style: none;
+	float: left;
+}
+.image1{
+	height:56px;
+	width:200px;
+	background: url("../images/join.png") 0px 0px;
+}
+.image2{
+	height:56px;
+	width:200px;
+	background: url("../images/join.png") -200px 56px;
+}
+.image3{
+	height:56px;
+	width:200px;
+	background: url("../images/join.png") -400px 0px;
+}
+.image4{
+	height:56px;
+	width:200px;
+	background: url("../images/join.png") 200px 0px;
+}
+.joininput{
+	width: 100%;
+	height:850px;
+}
+.joininput p{
+	font-size: 20px;
+	font-weight: bold;
+}
+.joininput th{
+	border-top: 1px solid black;
+}
+.input_ns1{
+	width: 187px;
+	padding-left:15px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.input_ns{
+	width: 187px;
+	padding-left:15px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.email1{
+	line-height: 120px;
+	height : 120px;
+}
+.pw1{
+	height:50px;
+}
+.pwr1{
+	height:50px;
+}
+.nick1{
+	height:50px;
+}
+.day1{
+	height:50px;
+}
+.sx1{
+	height:50px;
+}
+.email_box1{
+	border: 1px solid #cfcfcf;
+	height: 38px;
+	width: 183px;
+	padding : 0 13px;
+}
+.email_box2{
+	width: 153px;
+	height: 38px;
+	border: 1px solid #cfcfcf;
+	font-weight: normal;
+}
+.email{
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.s1{
+	padding-top :2px;
+	box-sizing: border-box;
+}
+.input_ss{
+	color: #919191;
+	font-size: 13px;
+}
+.input_ss2{
+	color: #333;
+	font-size: 13px;
+	font-weight: bold;
+}
+.pw_box{
+	border: 1px solid #cfcfcf;
+	color: #919191;
+	font-size: 13px;
+	width: 238px;
+	height: 38px;
+	padding : 0 13px;
+}
+.birth1{
+	border: 1px solid #cfcfcf;
+	color: #919191;
+	font-size: 13px;
+	padding : 0 13px;
+	width: 153px;
+	height: 38px;
+}
+.birth2{
+	border: 1px solid #cfcfcf;
+	color: #919191;
+	font-size: 13px;
+	padding : 0 13px;
+	width: 93px;
+	height: 38px;
+}
+.birth3{
+	border: 1px solid #cfcfcf;
+	color: #919191;
+	font-size: 13px;
+	padding : 0 13px;
+	width: 93px;
+	height: 38px;
+}
+.button{
+	width: 98px;
+	height: 44px;
+	margin : 60px 351px 0px 351px;
+	background-color: #d4d4d4;
+	border : 1px solid #d4d4d4;
+	font-size: 16px;
+	color: #777;
+}
+@media(max-width:1178px){
+	.header_menu{
+		display: none;
+	}
+}
+@media (max-width : 817px){
+	.header_language{
+		display: none;
+	}
+}
+@media(max-width:705px){
+	.footer_one{
+		display: none;	
+	}
+}
+</style>
+</head>
+<body>
+<!------------------------------- header start ------------------------------->
+	<header>
+		<div class="header_wrap">
+			<nav class="header_logo">
+				<a href="/web_ex5/index.html">kakao</a>
+			</nav>
+			<nav class="header_menu">
+				<ul>
+					<li><a href="/web_ex5/index.html">카카오</a></li>
+					<li><a href="#">투자정보</a></li>
+					<li><a href="#">서비스</a></li>
+					<li><a href="#">소셜임팩트</a></li>
+					<li><a href="#">고객지원</a></li>
+					<li><a href="/web_ex5/notice/notice.html">공고사항</a>
+						<button type="button" class="btn btn-info">
+							<span class="glyphicon glyphicon-search"></span>
+						</button></li>
+				</ul>
+			</nav>
+			<nav class="header_language">
+				<div class="kr">
+					<a href="/web_ex5/member/terms.html" class="kor">JOIN</a> &nbsp;&nbsp;<a href="#" class="en">LogIn</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!------------------------------- header end------------------------------->
+	<!------------------------------- body start ------------------------------->
+		<section class="section_top">
+			<article class="joinmain">
+				<div class="joinimage">
+					<ul>
+						<li class="image1"></li>
+						<li class="image2"></li>
+						<li class="image3"></li>
+						<li class="image4"></li>
+					</ul>
+				</div>
+				<div class="joininput">
+					<p>카카오계정 정보입력</p>
+					<form action="#">
+					<table>
+						<tr>
+							<th class="input_ns1 email1" rowspan="3">카카오계정 이메일</th>
+							<th class="email input_ss">
+							<input class="email_box1" type="text">&nbsp; @ &nbsp;
+							<select class="email_box2">
+								<option>도메인 선택</option>
+								<option>naver.com</option>
+								<option>daum.net</option>
+								<option>nate.com</option>
+								<option>hanmail.com</option>
+								<option>gmail.com</option>
+								<option>hatmail.com</option>
+							</select> 
+							</th>
+						</tr>
+						<tr>
+							<td class="input_ss s1">·입력한 이메일로 인증메일이 발송됩니다.</td>
+						</tr>
+						<tr>
+							<td class="input_ss s1">·실제로 사용중인 이메일주소를 입력해주세요. 비밀번호 분실 시 이메일을 통해 재설정이 가능합니다.</td>
+						</tr>
+						<tr>
+							<td class="input_ns pw1">비밀번호(8~32자리)</td>
+							<td><input type="password" placeholder="비밀번호(8~32자리)" class="pw_box"> </td>
+						</tr>
+						<tr>
+							<td class="input_ns pwr1" rowspan="4">비밀번호 재입력</td>
+							<td><input type="password" placeholder="비밀번호 재입력" class="pw_box"></td>
+						</tr>
+						<tr>
+							<td class="input_ss s1">·비밀번호는 8~32 자의 영문 대소문자, 숫자, 특수문자를 조합하여 설정해주세요.</td>
+						</tr>
+						<tr>
+							<td class="input_ss s1">·다른사이트에서 사용하는 것과 동일하거나 쉬운 비밀번호는 사용하지 마세요.</td>
+						</tr>
+						<tr>
+							<td class="input_ss s1">·안전한 계정 사용을 위해 비밀번호는 주기적으로 변경해주세요.</td>
+						</tr>
+						<tr>
+							<td class="input_ns nick1">닉네임</td>
+							<td><input type="text" placeholder="닉네임을 입력해주세요." class="pw_box"></td>
+						</tr>
+						<tr>
+							<td class="input_ns day1">생년월일</td>
+							<td class="input_ss2">
+								<select class="birth1">
+									<option>연도</option><option>2005</option><option>2004</option><option>2003</option><option>2002</option>
+									<option>2001</option><option>2000</option><option>1999</option><option>1998</option><option>1997</option>
+									<option>1996</option><option>1995</option><option>1994</option><option>1993</option><option>1992</option>
+									<option>1991</option><option>1990</option><option>1989</option><option>1988</option><option>1987</option>
+									<option>1986</option><option>1985</option><option>1984</option><option>1983</option><option>1982</option>
+									<option>1981</option><option>1980</option><option>1979</option><option>1978</option><option>1977</option>
+									<option>1976</option><option>1975</option><option>1974</option><option>1973</option><option>1972</option>
+									<option>1971</option><option>1970</option><option>1969</option><option>1968</option><option>1967</option>
+									<option>1966</option><option>1965</option><option>1964</option><option>1963</option><option>1962</option>
+									<option>1961</option><option>1960</option><option>1959</option><option>1958</option><option>1957</option>
+									<option>1956</option><option>1955</option><option>1954</option><option>1953</option><option>1952</option>
+									<option>1951</option><option>1950</option><option>1949</option><option>1948</option><option>1947</option>
+								</select>
+								<select class="birth2">
+									<option>월</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+									<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
+									<option>12</option>
+								</select>
+								<select class="birth3">
+									<option>일</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+									<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
+									<option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option>
+									<option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option>
+									<option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option>
+									<option>30</option><option>31</option>
+								</select>
+								&nbsp;&nbsp;&nbsp;<input type="checkbox" name="month">음력 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="checkbox" name="month">윤달 
+							</td>
+						</tr>
+						<tr>
+							<td class="input_ns sx1">성별</td>
+							<td class="input_ss2"><input type="radio" name="gender"> 여성 &nbsp;&nbsp;&nbsp;
+							<input type="radio" name="gender"> 남성 &nbsp;&nbsp;&nbsp;
+							<input type="radio" name="gender"> 선택안함 </td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input class="button" type="submit" value="회원가입">
+							</td>
+						</tr>
+					</table>
+					</form>
+				</div>
+			</article>
+		</section>
+	<!------------------------------- body end ------------------------------->
+	<!------------------------------- footer start ------------------------------->
+		<footer>
+		<div class="footer_wrap">
+			<div class="footer_one">
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						이용약관 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/terms?type=t&lang=ko">카카오 통합 약관</a></li>
+						<li><a href="http://www.kakao.com/policy/terms?type=s&lang=ko">카카오 서비스 약관</a></li>
+						<li><a href="http://policy.daum.net/info/info">Daum 서비스 약관</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						위치기반서비스이용약관 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/location?lang=ko">카카오 위치기반서비스 이용약관</a></li>
+						<li><a href="http://policy.daum.net/mobile_info/mobile_info">Daum 위치기반서비스 약관</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						개인정보처리방침 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.kakaocorp.com/policy/privacyPolicy/corporateSitePrivacyPolicy">기업사이트 개인정보처리방침</a></li>
+						<li><a href="http://www.kakao.com/policy/privacy?lang=ko">카카오 서비스 개인정보처리방침</a></li>
+						<li><a href="http://policy.daum.net/info_protection/info_protection">Daum 서비스 개인정보처리방침</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						운영정책<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/oppolicy?lang=ko">카카오 운영정책</a></li>
+						<li><a href="http://policy.daum.net/operation_policy/operation_policy">Daum 운영정책</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						청소년보호정책 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/safeguard?lang=ko">카카오 청소년보호정책</a></li>
+						<li><a href="http://policy.daum.net/youthpolicy/youthpolicy">Daum 청소년보호정책</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button">
+						<a href="http://www.kakao.com/policy/right?lang=ko">권리침해신고안내</a>
+					</button>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						공지사항 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.kakaocorp.com/policy/notice/kakaocorp/list">기업사이트 공지사항</a></li>
+						<li><a href="http://www.kakao.com/notices?lang=ko">카카오 서비스 공지사항</a></li>
+						<li><a href="https://m.daum.net/channel/noticePC?order=recent">Daum 서비스 공지사항</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button">
+						<a href="https://www.kakaocorp.com/policy/cyberEthics/info">사이버윤리실</a>
+					</button>
+				</div>
+				<div class="down">&nbsp;&nbsp;&nbsp;Copyright © Kakao Corp.
+					All rights reserved.</div>
+
+			</div>
+			<div class="footer_two">
+				<div class="site">
+					<div class="dropup">
+						<button class="btn btn-default dropdown-toggle" type="button"
+							data-toggle="dropdown">
+							관련사이트 <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">카카오 AI</a></li>
+							<li><a href="#">카카오 프라이버시</a></li>
+							<li><a href="#">카카오 디벨로퍼스</a></li>
+							<li><a href="#">다음 포탈 사이트</a></li>
+							<li><a href="#">동반성장 사이트</a></li>
+							<li><a href="#">제주 with kakao</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!------------------------------- footer end ------------------------------->
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/layout.css">
+<style type="text/css">
+.box_info{
+	height: 60px;
+	width: 100%;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 60px;
+}
+.info_li{
+	height : 60px;
+	width: 94%;
+	margin: 0 auto;
+	line-height: 60px;
+}
+.info_li a{
+	color: black;
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+}
+#li_n{
+	color: black;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.box_info li{
+	list-style: none;
+	float: left;
+}
+.notice_top{
+	height: 960px;
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 73px;
+}
+.ntop_text{
+	height: 960px;
+	width: 20%;
+	float:left;
+	font-size: 18px;
+	font-weight: bold;
+}
+.ntop_menu{
+	height: 960px;
+	width : 80%;
+	float: right;
+}
+.ntop_info{
+	height: 70px;
+	width: 60%;
+	float: left;
+	margin-bottom: 50px;
+}
+.info_text{
+	font-size: 18px;
+	font-weight: bold;
+}
+.info_date{
+	font-size: 16px;
+	color: #666;
+}
+.box {
+	width: 150px;
+	height: 38px;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 38px;
+	float: right;
+	margin : 0 auto;
+	border: 1px solid black;
+}
+.ntop_table{
+	width : 100%;
+	background-color : white;
+	margin : 0 auto;
+	font-size: 1em;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+.ntop_table th{
+	border-top: 2px black solid;
+	text-align: center;
+}
+.table_date{
+	border-bottom: 1px solid #e5e5e5;
+	height : 55px;
+	width: 150px;
+	text-align: center;
+	color: #666;
+	font-weight: lighter;
+}
+.table_sub{
+	border-bottom: 1px solid #e5e5e5;
+	height : 55px;
+	width: 647.75px;
+	padding-left : 15px;
+}
+.table_sub a{
+	color: black;
+	text-decoration: none;
+}
+.container{
+	padding-left:244px;
+}
+.container a{
+	color: #666;
+}
+.a{
+	color: black;
+	font-weight: bold;
+}
+.notice_bottom{
+	width : 100%;
+	border-top: 1px solid #666; 
+}
+.nbottom_menu{
+	margin : 53px auto;
+	width:60%;
+}
+.nbottom_menu li{
+	list-style: none;
+	padding-top: 4px;
+}
+.bm_header{
+	color: #1e1e1e;
+	font-size: 14px;
+	font-weight: bold;
+}
+.bm_footer{
+	color: #666;
+	font-size: 12px;
+	font-weight: lighter;
+}
+.bmenu1{
+	width: 160px;
+	float: left;
+	height : 160px;
+}
+.bmenu2{
+	width: 160px;
+	float: left;
+	height : 160px;
+	margin-left :35px; 
+}
+.bmenu3{
+	width: 160px;
+	float: left;
+	height : 160px;
+	margin-left :35px; 
+}
+.bmenu4{
+	width: 160px;
+	float: left;
+	height : 160px;
+	margin-left :35px; 
+}
+.bmenu5{
+	width: 160px;
+	float: left;
+	height : 160px;
+	margin-left :35px; 
+	margin-right:35px;
+}
+.bmenu6{
+	width: 160px;
+	overflow: hidden;
+}	
+.bmenu7{
+	width: 160px;
+	margin-top : 20px;
+	overflow: hidden;
+}
+@media(max-width:1178px){
+	.header_menu{
+		display: none;
+	}
+}
+@media (max-width : 817px){
+	.header_language{
+		display: none;
+	}
+}
+@media(max-width:705px){
+	.footer_one{
+		display: none;	
+	}
+}
+</style>
+</head>
+<body>
+<!------------------------------- header start ------------------------------->
+	<header>
+		<div class="header_wrap">
+			<nav class="header_logo">
+				<a href="/web_ex5/index.html">kakao</a>
+			</nav>
+			<nav class="header_menu">
+				<ul>
+					<li><a href="/web_ex5/index.html">카카오</a></li>
+					<li><a href="#">투자정보</a></li>
+					<li><a href="#">서비스</a></li>
+					<li><a href="#">소셜임팩트</a></li>
+					<li><a href="#">고객지원</a></li>
+					<li><a href="/web_ex5/notice/notice.html">공고사항</a>
+						<button type="button" class="btn btn-info">
+							<span class="glyphicon glyphicon-search"></span>
+						</button></li>
+				</ul>
+			</nav>
+			<nav class="header_language">
+				<div class="kr">
+					<a href="/web_ex5/member/terms.html" class="kor" class="kor">JOIN</a> &nbsp;&nbsp;<a href="#" class="en">LogIn</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!------------------------------- header end------------------------------->
+	<!------------------------------- body start ------------------------------->
+		<section class="section_top">
+			<article class="box_info">
+			<div class="info_li">
+				<ul>
+				<li><a href="../index.html">홈 &nbsp;&gt;&nbsp;</a></li> 
+				<li id="li_n">공고사항</li>
+				</ul>
+				</div>
+			</article>
+			<article class="notice_top">
+				<div class="ntop_text">공고사항</div>
+				<div class="ntop_menu">
+					<div class="ntop_info">
+					<p class="info_text">제 24기 결산공고</p><br>
+					<p class="info_date">2019-03-26</p>
+					</div>
+					<div class="box">자세히보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+					<div class="ntop_table">
+					<table>
+						<tr>
+							<th class="table_sub">내용</th>
+							<th class="table_date">등록일</th>
+						</tr>
+						<tr>
+							<td class="table_sub"><a href="#">제24기 결산공고</a></td>
+							<td class="table_date">2019-03-26</td>
+						</tr>
+						<tr>
+							<td class="table_sub"><a href="#">제24기 정기주주총회 소집 공고</a></td>
+							<td class="table_date">2019-03-11</td>
+						</tr>
+						<tr>
+							<td class="table_sub"><a href="#">주식명의개서정지(주주명부폐쇄) 및 기준일 공고</a></td>
+							<td class="table_date">2018-12-13</td>
+						</tr>
+						<tr>
+							<td class="table_sub"><a href="#">분할보고총회에 갈음하는 공고</a></td>
+							<td class="table_date">2018-12-03</td>
+						</tr>
+						<tr>
+							<td class="table_sub"><a href="#">회사분할에 따른 채권자 이의제출 공고</a></td>
+							<td class="table_date">2018-10-31</td>
+						</tr>
+						<tr>
+							<td class="table_sub"><a href="#">제24기 임시주주총회 소집공고</a></td>
+							<td class="table_date">2018-09-20</td>
+						</tr>
+						<tr>
+							<td class="table_sub"><a href="#">주식명의개서 정지 공고</a></td>
+							<td class="table_date">2018-09-20</td>
+						</tr>
+						<tr>
+							<td class="table_sub"><a href="#">합병 완료 공고</a></td>
+							<td class="table_date">2018-09-03</td>
+						</tr>
+						<tr>
+							<td class="table_sub"><a href="#">합병에 따른 채권자 이의제출 공고</a></td>
+							<td class="table_date">2018-07-06</td>
+						</tr>
+						<tr>
+							<td class="table_sub"><a href="#">소규모합병 공고</a></td>
+							<td class="table_date">2018-06-01</td>
+						</tr>
+					</table>
+						<div class="container">
+  							<a href="#"><button type="button" class="btn btn-default">&lt;&lt;</button></a>
+  							<a href="#"><button type="button" class="btn btn-default">&lt;</button></a>
+  							<a href="#"><button type="button" class="btn btn-default a">1</button></a>
+  							<a href="#"><button type="button" class="btn btn-default">2</button></a>
+  							<a href="#"><button type="button" class="btn btn-default">3</button></a>
+  							<a href="#"><button type="button" class="btn btn-default">4</button></a>
+  							<a href="#"><button type="button" class="btn btn-default">5</button></a>
+  							<a href="#"><button type="button" class="btn btn-default">&gt;</button></a>
+  							<a href="#"><button type="button" class="btn btn-default">&gt;&gt;</button></a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="notice_bottom">
+				<nav class="nbottom_menu">
+					<div class="bmenu1">
+					<p><a class="bm_header" href="#">카카오</a></p>
+						<ul>
+							<li><a class="bm_footer" href="#">카카오 소개</a></li>
+							<li><a class="bm_footer" href="#">카카오 AI</a></li>
+							<li><a class="bm_footer" href="#">자회사</a></li>
+							<li><a class="bm_footer" href="#">비즈니스</a></li>
+							<li><a class="bm_footer" href="#">홍보채널</a></li>
+							<li><a class="bm_footer" href="#">오시는 길</a></li>
+						</ul>
+					</div>
+					<div class="bmenu2">
+					<p><a class="bm_header" href="#">투자정보</a></p>
+						<ul>
+							<li><a class="bm_footer" href="#">경영정보</a></li>
+							<li><a class="bm_footer" href="#">공시정보</a></li>
+							<li><a class="bm_footer" href="#">추가정보</a></li>
+							<li><a class="bm_footer" href="#">재무정보</a></li>
+							<li><a class="bm_footer" href="#">IR 일정</a></li>
+							<li><a class="bm_footer" href="#">IR 자료실</a></li>
+							<li><a class="bm_footer" href="#">증권사커버리지</a></li>
+							<li><a class="bm_footer" href="#">공고</a></li>
+						</ul>
+					</div>
+					<div class="bmenu3">
+					<p><a class="bm_header" href="#">서비스</a></p>
+						<ul>
+							<li><a class="bm_footer" href="#">포털</a></li>
+							<li><a class="bm_footer" href="#">커뮤니케이션</a></li>
+							<li><a class="bm_footer" href="#">콘텐츠</a></li>
+							<li><a class="bm_footer" href="#">커머스</a></li>
+							<li><a class="bm_footer" href="#">게임</a></li>
+							<li><a class="bm_footer" href="#">핀테크</a></li>
+							<li><a class="bm_footer" href="#">모빌리티 & 라이프</a></li>
+							<li><a class="bm_footer" href="#">소셜임팩트</a></li>
+						</ul>
+					</div>
+					<div class="bmenu4">
+					<p><a class="bm_header" href="#">소셜임팩트</a></p>
+						<ul>
+							<li><a class="bm_footer" href="#">소셜임팩트 서비스</a></li>
+							<li><a class="bm_footer" href="#">사회공헌</a></li>
+							<li><a class="bm_footer" href="#">상생</a></li>
+							<li><a class="bm_footer" href="#">제주지역협력</a></li>
+							<li><a class="bm_footer" href="#">Partners with Kakao</a></li>
+						</ul>
+					</div>
+					<div class="bmenu5">
+					<p><a class="bm_header" href="#">인재영입</a></p>
+						<ul>
+							<li><a class="bm_footer" href="#">카카오크루</a></li>
+							<li><a class="bm_footer" href="#">크루인터뷰</a></li>
+							<li><a class="bm_footer" href="#">지원하기</a></li>
+							<li><a class="bm_footer" href="#">나의지원서</a></li>
+						</ul>
+					</div>
+					<div class="bmenu6">
+					<p><a class="bm_header" href="#">고객지원</a></p>
+						<ul>
+							<li><a class="bm_footer" href="#">카카오 고객센터</a></li>
+							<li><a class="bm_footer" href="#">Daum 고객센터</a></li>
+						</ul>
+					</div>
+					<div class="bmenu7">
+					<p><a class="bm_header" href="#">카카오계정</a></p>
+						<ul>
+							<li><a class="bm_footer" href="#">계정정보 관리</a></li>
+							<li><a class="bm_footer" href="#">계정/비밀전호 찾기</a></li>
+							<li><a class="bm_footer" href="#">계정 도움말</a></li>
+						</ul>
+					</div>
+				</nav>
+			</article>
+		</section>
+	<!------------------------------- body end ------------------------------->
+	<!------------------------------- footer start ------------------------------->
+		<footer>
+		<div class="footer_wrap">
+			<div class="footer_one">
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						이용약관 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/terms?type=t&lang=ko">카카오 통합 약관</a></li>
+						<li><a href="http://www.kakao.com/policy/terms?type=s&lang=ko">카카오 서비스 약관</a></li>
+						<li><a href="http://policy.daum.net/info/info">Daum 서비스 약관</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						위치기반서비스이용약관 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/location?lang=ko">카카오 위치기반서비스 이용약관</a></li>
+						<li><a href="http://policy.daum.net/mobile_info/mobile_info">Daum 위치기반서비스 약관</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						개인정보처리방침 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.kakaocorp.com/policy/privacyPolicy/corporateSitePrivacyPolicy">기업사이트 개인정보처리방침</a></li>
+						<li><a href="http://www.kakao.com/policy/privacy?lang=ko">카카오 서비스 개인정보처리방침</a></li>
+						<li><a href="http://policy.daum.net/info_protection/info_protection">Daum 서비스 개인정보처리방침</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						운영정책<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/oppolicy?lang=ko">카카오 운영정책</a></li>
+						<li><a href="http://policy.daum.net/operation_policy/operation_policy">Daum 운영정책</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						청소년보호정책 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/safeguard?lang=ko">카카오 청소년보호정책</a></li>
+						<li><a href="http://policy.daum.net/youthpolicy/youthpolicy">Daum 청소년보호정책</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button">
+						<a href="http://www.kakao.com/policy/right?lang=ko">권리침해신고안내</a>
+					</button>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						공지사항 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.kakaocorp.com/policy/notice/kakaocorp/list">기업사이트 공지사항</a></li>
+						<li><a href="http://www.kakao.com/notices?lang=ko">카카오 서비스 공지사항</a></li>
+						<li><a href="https://m.daum.net/channel/noticePC?order=recent">Daum 서비스 공지사항</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button">
+						<a href="https://www.kakaocorp.com/policy/cyberEthics/info">사이버윤리실</a>
+					</button>
+				</div>
+				<div class="down">&nbsp;&nbsp;&nbsp;Copyright © Kakao Corp.
+					All rights reserved.</div>
+
+			</div>
+			<div class="footer_two">
+				<div class="site">
+					<div class="dropup">
+						<button class="btn btn-default dropdown-toggle" type="button"
+							data-toggle="dropdown">
+							관련사이트 <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">카카오 AI</a></li>
+							<li><a href="#">카카오 프라이버시</a></li>
+							<li><a href="#">카카오 디벨로퍼스</a></li>
+							<li><a href="#">다음 포탈 사이트</a></li>
+							<li><a href="#">동반성장 사이트</a></li>
+							<li><a href="#">제주 with kakao</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!------------------------------- footer end ------------------------------->
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="/web_ex5/css/layout.css">
+<style type="text/css">
+.banner {
+	width: 100%;
+	height: 732px;
+}
+
+.text1 {
+	top: 120px;
+	margin: 0 auto;
+	position: absolute;
+	font-size: 2em;
+	font-weight: bold;
+	left: 4%;
+	color: white;
+}
+
+.text2 {
+	top: 120px;
+	margin: 0 auto;
+	position: absolute;
+	font-size: 2em;
+	font-weight: bold;
+	left: 4%;
+}
+
+.box {
+	top: 238px;
+	margin: 0 auto;
+	position: absolute;
+	left: 4%;
+	width: 7%;
+	height: 38px;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: white;
+	z-index: 1;
+	text-align: center;
+	line-height: 38px;
+}
+
+.box2 {
+	top: 278px;
+	margin: 0 auto;
+	position: absolute;
+	left: 4%;
+	width: 7%;
+	height: 38px;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: white;
+	z-index: 1;
+	text-align: center;
+	line-height: 38px;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image: none
+}
+.main_top {
+	height: 180px;
+	width: 94%;
+	margin: 0 auto;
+	padding-top: 35px;
+	box-sizing: border-box;
+}
+.top1{
+	height: 145px;
+	width: 35%;
+	float: left;
+	padding: 0 20px;
+}
+.top1_1{
+	font-size: 0.9em;
+	color: #1e1e1e;
+}
+.top1 a{
+	color: black;
+	font-size: 1.45em;
+	font-weight: bold;
+}
+.top1_2{
+	font-size: 0.95em;
+	color: #666;
+}
+.top2{
+	height: 145px;
+	width: 35%;
+	float: left;
+	padding: 0 20px 0 20px;
+}
+.top2_1{
+	font-size: 2.7em;
+	font-weight: bold;
+	text-align: left;
+	width: 150px;
+}
+.top2_2{
+	text-align: left;
+	color: red;
+	font-size: 1.5em;
+}
+.top3{
+	height: 145px;
+	width: 22%;
+	float: left;
+}
+.top3_1{
+	font-size: 1.3em;
+	font-weight: bold;
+	color : black;
+}
+.main_bottom {
+	width: 91%;
+	margin: 0 auto;
+	height: 511px;
+}
+.bottom1_1{
+	width: 33%;
+	height : 511px;
+	padding: 76px 20px 0 20px;
+	box-sizing: border-box;
+	float: left;
+}
+.image_main1{
+	width: 100%;
+	height: auto;
+}
+.bottom1_1 a{
+	color: black;
+	font-size: 1.45em;
+	font-weight: bold;
+}
+.bottom_p{
+	font-size: 0.95em;
+	color: #666;
+}
+@media(max-width:1633px){
+	.box{
+		display : none;
+	}
+	.box2{
+		display : none;
+	} 
+}
+@media(max-width:1178px){
+	.header_menu{
+		display: none;
+	}
+}
+@media (max-width : 817px){
+	.header_language{
+		display: none;
+	}
+}
+@media (max-width:768px) {
+	.main_top{
+		display: none;
+	}
+	.main_bottom{
+		display : none;
+	}
+	.text1{
+		display : none;
+	}
+	.text2{
+		display : none;
+	}
+}
+@media(max-width:705px){
+	.footer_one{
+		display: none;	
+	}
+}
+</style>
+</head>
+<body>
+	<!------------------------------- header start ------------------------------->
+	<header>
+		<div class="header_wrap">
+			<nav class="header_logo">
+				<a href="/web_ex5/index.html">kakao</a>
+			</nav>
+			<nav class="header_menu">
+				<ul>
+					<li><a href="/web_ex5/index.html">카카오</a></li>
+					<li><a href="#">투자정보</a></li>
+					<li><a href="#">서비스</a></li>
+					<li><a href="#">소셜임팩트</a></li>
+					<li><a href="#">고객지원</a></li>
+					<li><a href="/web_ex5/member/terms.html">공고사항</a>
+						<button type="button" class="btn btn-info">
+							<span class="glyphicon glyphicon-search"></span>
+						</button></li>
+				</ul>
+			</nav>
+			<nav class="header_language">
+				<div class="kr">
+					<a href="/web_ex5/member/terms.html" class="kor" class="kor">JOIN</a> &nbsp;&nbsp;<a href="#" class="en">LogIn</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!------------------------------- header end------------------------------->
+	<!------------------------------- body start ------------------------------->
+	<section class="section_top">
+		<article class="banner">
+			<div class="container-fluid">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="./images/kakao4.png" alt="kakao4.png"
+								style="width: 100%; height: 732px;">
+							<div>
+								<p class="text1">
+									일상에 필요한 모든 것들을 연결해주는<br>당신과 가장 가까운 인공지능을 만나보세요.
+								</p>
+								<br>
+								<div class="box">자세히보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="./images/kakao3.png" alt="kakao3.png"
+								style="width: 100%; height: 732px;">
+							<div>
+								<p class="text2">
+									카카오는 새로운 연결을 통해<br>더 편리하고 즐거운 세상을 꿈꿉니다.
+								</p>
+								<br>
+								<div class="box">자세히보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="./images/kakao2.png" alt="kakao2.png"
+								style="width: 100%; height: 732px;">
+							<div>
+								<p class="text1">
+									끊임없이 이동하는 우리의 삶 속 카카오는 어떤 모습일까요?<br> 이동에 대한 카카오의 모든 이야기들을
+									담았습니다.
+								</p>
+								<br>
+								<div class="box">자세히보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="./images/kakao1.png" alt="kakao1.png"
+								style="width: 100%; height: 732px;">
+							<div>
+								<p class="text2">
+									카카오로 연결된 수많은 파트너들과,<br>그들과 함께 더 나은 세상을 만들어나가고자 하는<br>카카오의
+									진심을 전합니다.
+								</p>
+								<br>
+								<div class="box2">자세히보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel"
+						data-slide="prev"> <span
+						class="glyphicon glyphicon-chevron-left"></span> <span
+						class="sr-only">Previous</span>
+					</a> <a class="right carousel-control" href="#myCarousel"
+						data-slide="next"> <span
+						class="glyphicon glyphicon-chevron-right"></span> <span
+						class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</article>
+		<section class="main_top">
+			<article class="top1">
+				<p class="top1_1">PRESS RELEASE</p><br>
+				<p><a href="https://www.kakaocorp.com/kakao/prChannel/pressReleasesView?boardIdx=9957">카카오메이커스, 누적 매출액 1천억원 돌파</a> </p>
+				<p class="top1_2">-'재고없는 생산'으로 제조업의 패러다임 바꿔 성공- 85만 여 명의 고객이 주문생산에 동참,<br>
+				   413만개 제품이 재고 없이 판매 성공[2019.05.02] 주문생산 기반의 커머스 플랫폼 '카카오메이...</p>
+				</div>
+			</article>
+			<article class="top2">
+			<p class="top1_1">STOCK</p><br>
+			<table>
+			<tr>
+			<td class="top2_1">123,000</td>
+			<td class="top2_2"> ▲ 3,000</td>
+			</tr>
+			<tr>
+			<td class="top1_2" rowspan="2"><br>2019-05-02 18:50:13</td>
+			</tr>
+			</table>
+			</article>
+			<article class="top3">
+			<p class="top1_1">PRIVACY POLICY</p><br>
+			<a class="top3_1" href="https://privacy.kakao.com/main?lang=ko"><p >카카오는 데이터의 연결과 보호의 균형을 위해 언제나 최선을 다 하겠습니다.</p></a>
+			</article>
+		</section>
+		<section class="main_bottom">
+			<article class="bottom1_1">
+				<a href="https://www.kakaocorp.com/service/KakaoMart"><img class="image_main1" alt="" src="./images/main1.png">
+				<p>카카오톡에서 장보면 이마트가 쓱~배송해준다! 새로운 장보기 습관, 카카오장보기.</p></a>
+				<p class="bottom_p">카카오장보기는 카카오가 올 한 해 중점적으로 추진하고 있는 카카오톡 진화의 일환으로 기획됐다. 카카오톡으로 쉽고 편리하세 장보고, 원하는 시간에 집 앞까지 배송받을 수 있는 서비스다....</p>
+			</article>
+			<article class="bottom1_1">
+				<a href="https://careers.kakao.com/interview/6"><img class="image_main1" alt="" src="./images/main2.png">
+				<p>문제를 새롭게 정의하고, 이를 풀어내기 위한 접근 방식을 집요하게 고민할 줄 아는 능력이 중요합니다.</p></a>
+				<p class="bottom_p">UX리서치파트는 말 그대로 사람들의 경험을 조사하는 부서로, 사용자 중심으로 서비스가 나아갈 방향을 제시하는 부서입니다. 우리의 타겟 사용자들을 만나 그들이 누구이며 평소 어떤 행동들....</p>
+			</article>
+			<article class="bottom1_1">
+				<a href="https://blog.kakaocorp.co.kr/679"><img class="image_main1" alt="" src="./images/main3.png">
+				<p>세계 행복의 날 기념, 같이가치 '안녕하세요' 캠페인을 소개합니다!</p></a>
+				<p class="bottom_p">'세계 행복의 날'이라는 기념일을 들어보신 적 있나요? 2012년 국제연합(UN)이 모든 사람들이 행복하게 살 수 있도록 전 세계가 함께 노력하자는 취지로 매년 3월 20일을 '세계 ...</p>
+			</article>
+		</section>
+	</section>
+	<!------------------------------- body end ------------------------------->
+	<!------------------------------- footer start ------------------------------->
+	<footer>
+		<div class="footer_wrap">
+			<div class="footer_one">
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						이용약관 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/terms?type=t&lang=ko">카카오 통합 약관</a></li>
+						<li><a href="http://www.kakao.com/policy/terms?type=s&lang=ko">카카오 서비스 약관</a></li>
+						<li><a href="http://policy.daum.net/info/info">Daum 서비스 약관</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						위치기반서비스이용약관 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/location?lang=ko">카카오 위치기반서비스 이용약관</a></li>
+						<li><a href="http://policy.daum.net/mobile_info/mobile_info">Daum 위치기반서비스 약관</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						개인정보처리방침 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.kakaocorp.com/policy/privacyPolicy/corporateSitePrivacyPolicy">기업사이트 개인정보처리방침</a></li>
+						<li><a href="http://www.kakao.com/policy/privacy?lang=ko">카카오 서비스 개인정보처리방침</a></li>
+						<li><a href="http://policy.daum.net/info_protection/info_protection">Daum 서비스 개인정보처리방침</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						운영정책<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/oppolicy?lang=ko">카카오 운영정책</a></li>
+						<li><a href="http://policy.daum.net/operation_policy/operation_policy">Daum 운영정책</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						청소년보호정책 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.kakao.com/policy/safeguard?lang=ko">카카오 청소년보호정책</a></li>
+						<li><a href="http://policy.daum.net/youthpolicy/youthpolicy">Daum 청소년보호정책</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button">
+						<a href="http://www.kakao.com/policy/right?lang=ko">권리침해신고안내</a>
+					</button>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						공지사항 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.kakaocorp.com/policy/notice/kakaocorp/list">기업사이트 공지사항</a></li>
+						<li><a href="http://www.kakao.com/notices?lang=ko">카카오 서비스 공지사항</a></li>
+						<li><a href="https://m.daum.net/channel/noticePC?order=recent">Daum 서비스 공지사항</a></li>
+					</ul>
+				</div>
+				<div class="dropup up">
+					<button class="btn btn-default dropdown-toggle" type="button">
+						<a href="https://www.kakaocorp.com/policy/cyberEthics/info">사이버윤리실</a>
+					</button>
+				</div>
+				<div class="down">&nbsp;&nbsp;&nbsp;Copyright © Kakao Corp.
+					All rights reserved.</div>
+
+			</div>
+			<div class="footer_two">
+				<div class="site">
+					<div class="dropup">
+						<button class="btn btn-default dropdown-toggle" type="button"
+							data-toggle="dropdown">
+							관련사이트 <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">카카오 AI</a></li>
+							<li><a href="#">카카오 프라이버시</a></li>
+							<li><a href="#">카카오 디벨로퍼스</a></li>
+							<li><a href="#">다음 포탈 사이트</a></li>
+							<li><a href="#">동반성장 사이트</a></li>
+							<li><a href="#">제주 with kakao</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!------------------------------- footer end ------------------------------->
+</body>
+</html>
