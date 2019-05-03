@@ -52,6 +52,12 @@ header {
 	font-size: 1.1em;
 	color : black;
 }
+.kor:hover{
+	text-decoration: none;
+}
+.en:hover{
+	text-decoration: none;
+}
 .header_menu button {
 	background-color: black;
 	border: 0px;
